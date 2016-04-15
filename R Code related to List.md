@@ -20,3 +20,9 @@ Delete a column from data frame in list:
 `
 l<- lapply(myList, function(x) { x["columnname"] <- NULL; x })
 `
+
+Combine multiple data frames within a list into one data frame:
+
+`
+l<- rbind.fill(myList)
+`
